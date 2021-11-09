@@ -35,7 +35,7 @@ int main(void)
 
     while (1) {
 
-        if (milis() - time > 333 && BTN_PUSH) {
+        if (milis() - time > 10000 && BTN_PUSH) {
             GPIO_WriteReverse(LED_PORT, LED_PIN);
             time = milis();
         }
